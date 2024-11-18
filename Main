@@ -1,0 +1,32 @@
+--if someone want to ask why there is 2 dungeon quests,one for lobby and one for main game--
+--also open sourced,take if you want,but make sure to remove all Ids and loadstrings if you want to copy this--
+
+local gameidlist = { --game id list--
+    [1] = 2414851778,
+    [2] = 7142143048,
+    [3] = 14363263080,
+    [4] = 8260276694,
+    [5] = 6846458508,
+    [6] = 18458348062,
+    [7] = 18229110749
+}
+
+for _, gameId in ipairs(gameidlist) do
+    if gameId == game.PlaceId then
+        if gameId == 2414851778 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/goofyahh-hub/-Dungeon-Quest-RPG-Adventure/refs/heads/main/Main"))()
+        elseif gameId == 7142143048 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/goofyahh-hub/Build-A-Boat-With-Blocks-/refs/heads/main/Main"))()
+        elseif gameId == 14363263080 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/goofyahh-hub/-Dungeon-Quest-RPG-Adventure/refs/heads/main/Main"))()
+        elseif gameId == 8260276694 then
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/goofyahh-hub/Ability-Wars/refs/heads/main/Main')))()
+        elseif gameId == 6846458508 then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/goofyahh-hub/A-Universal-Time-/refs/heads/main/Main'))()
+        elseif gameId == 18458348062 then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/goofyahh-hub/Tower-Defense-RNG/refs/heads/main/Main'))()
+        elseif gameId == 18229110749 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/goofyahh-hub/-Event-Units-Battlegrounds-OP-script/refs/heads/main/Main"))()
+        end
+    end
+end
