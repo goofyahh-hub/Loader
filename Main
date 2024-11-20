@@ -8,7 +8,8 @@ local gameidlist = { --game id list--
     [4] = 8260276694,
     [5] = 6846458508,
     [6] = 18458348062,
-    [7] = 18229110749
+    [7] = 18229110749,
+    [8] = 2809202155
 }
 
 for _, gameId in ipairs(gameidlist) do
@@ -27,6 +28,8 @@ for _, gameId in ipairs(gameidlist) do
             loadstring(game:HttpGet('https://raw.githubusercontent.com/goofyahh-hub/Tower-Defense-RNG/refs/heads/main/Main'))()
         elseif gameId == 18229110749 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/goofyahh-hub/-Event-Units-Battlegrounds-OP-script/refs/heads/main/Main"))()
+        elseif gameId == 2809202155 then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/goofyahh-hub/Your-Bizarre-Adventure/refs/heads/main/Main'))()
         end
     end
 end
